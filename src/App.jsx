@@ -1,6 +1,7 @@
 //project files
 import FormValidate from './component/FormValidate'
 import {nameValidation, emailValidation, ageValidation} from './scripts/validator.js'
+import './styles/styles.css'
 
 const validate = {
   firstName: (name) => nameValidation("First Name", name),
@@ -18,15 +19,12 @@ const initialValues = {
 function App() {
   return (
     <div
-      className="App"
-      style={{
-        marginLeft: "auto",
-        marginRight: "auto",
-        maxWidth: "960px",
-        padding: "10px",
-      }}
-    > Form Validation App
-      <FormValidate validate={validate} initialValues={initialValues}/>
+      className="login-root"
+    >
+      <div className="formbg">
+        Form Validation App
+        <FormValidate validate={validate} initialValues={initialValues} />
+      </div>
     </div>
   );
 }
