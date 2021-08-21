@@ -3,7 +3,7 @@ const word_length = 3
 const age_min = 18
 const age_max = 99
 const regex = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
-const nameValidation = (fieldName, fieldValue) => {
+export const nameValidation = (fieldName, fieldValue) => {
   if (fieldValue.trim() === "") {
     return `${fieldName} is required`;
   }
@@ -16,7 +16,7 @@ const nameValidation = (fieldName, fieldValue) => {
   return null;
 };
 
-const emailValidation = (email) => {
+export const emailValidation = (email) => {
   if (email.trim() === "") {
     return "Email is required";
   }
@@ -28,7 +28,7 @@ const emailValidation = (email) => {
   return "Please enter a valid email";
 };
 
-const ageValidation = (age) => {
+export const ageValidation = (age) => {
   if (!age) {
     return "Age is required";
   }
