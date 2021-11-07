@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Build and validate a form manually, without the help of any external libraries
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this project, I practice to understand how forms are built in React and learn to avoid common pitfalls.
 
 ## Available Scripts
 
